@@ -1,4 +1,5 @@
 # Shuttle
+<img width="292" height="86" alt="Captura de pantalla 2026-07-04 014930" src="https://github.com/user-attachments/assets/87521adc-21ac-4d42-9eeb-ce48be2b04c3" />
 
 Extensión CEP para **Adobe Illustrator** y **Adobe Photoshop** que permite enviar y recibir contenido entre ambas aplicaciones con un solo clic, manteniendo posición, tamaño y — cuando es posible — texto editable.
 
