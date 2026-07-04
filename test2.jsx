@@ -1,0 +1,1 @@
+try { var app = new ActionReference(); ... } catch(e){}

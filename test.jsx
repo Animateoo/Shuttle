@@ -1,0 +1,1 @@
+var d=new ActionReference(); d.putProperty(charIDToTypeID('Prpr'), stringIDToTypeID('targetLayersIDs')); d.putEnumerated(charIDToTypeID('Dcmn'), charIDToTypeID('Ordn'), charIDToTypeID('Trgt')); var desc=executeActionGet(d); var lst=desc.getList(stringIDToTypeID('targetLayersIDs')); var r=lst.getType(0); app.system('echo '+r+'> test_out.txt')

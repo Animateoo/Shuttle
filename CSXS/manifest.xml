@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="12.0" ExtensionBundleId="com.shuttle.v2.bundle" ExtensionBundleVersion="1.0.0"
+        ExtensionBundleName="Shuttle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="com.shuttle.v2.panel" Version="1.0" />
+        <Extension Id="com.shuttle.v2.hidden" Version="1.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- Illustrator (CC 2014+) through current releases -->
+            <Host Name="ILST" Version="[18.0,99.9]" />
+            <!-- Photoshop (CC 2014+) through current releases -->
+            <Host Name="PHXS" Version="[15.0,99.9]" />
+            <Host Name="PHSP" Version="[15.0,99.9]" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="12.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.shuttle.v2.panel">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./html/index.html</MainPath>
+                    <ScriptPath>./jsx/shuttle.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--allow-file-access-from-files</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Shuttle</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>300</Height>
+                            <Width>260</Width>
+                        </Size>
+                        <MinSize>
+                            <Width>40</Width>
+                            <Height>40</Height>
+                        </MinSize>
+                        <MaxSize>
+                            <Width>2000</Width>
+                            <Height>2000</Height>
+                        </MaxSize>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./img/icon-light.png</Icon>
+                        <Icon Type="RollOver">./img/icon-light-hover.png</Icon>
+                        <Icon Type="DarkNormal">./img/icon-dark.png</Icon>
+                        <Icon Type="DarkRollOver">./img/icon-dark-hover.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+
+        <Extension Id="com.shuttle.v2.hidden">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./html/index.html</MainPath>
+                    <ScriptPath>./jsx/shuttle.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--allow-file-access-from-files</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>false</AutoVisible>
+                    <StartOn>
+                        <Event>com.adobe.csxs.events.ApplicationInitialized</Event>
+                        <Event>applicationActivate</Event>
+                    </StartOn>
+                </Lifecycle>
+                <UI>
+                    <Type>Custom</Type>
+                    <Geometry>
+                        <Size>
+                            <Height>1</Height>
+                            <Width>1</Width>
+                        </Size>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
