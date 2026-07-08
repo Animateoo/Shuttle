@@ -141,3 +141,35 @@ Consulta el repositorio para términos de uso y contribuciones.
 ## Créditos
 
 Desarrollado por **Animateoo** · [github.com/Animateoo/Shuttle](https://github.com/Animateoo/Shuttle)
+---
+
+## Licencia
+
+Este proyecto incluye dos documentos de licencia:
+
+* **`LICENSE`** — Licencia MIT estándar.
+* **`CUSTOM_LICENSE`** — Términos adicionales de uso y redistribución del autor.
+
+---
+
+## Uso y Contribuciones
+
+Este plugin es gratuito y ha sido desarrollado por Mateo Crespo (Animateo).
+
+Puedes:
+
+* Utilizar el plugin en proyectos personales y comerciales.
+* Revisar y aprender del código fuente.
+* Reportar errores y sugerir mejoras.
+* Compartir optimizaciones, correcciones o nuevas funciones con el autor.
+
+No está permitido:
+
+* Vender este plugin o versiones derivadas del mismo.
+* Redistribuir versiones modificadas como un producto independiente.
+* Eliminar los créditos del autor original.
+* Publicar versiones modificadas sin autorización previa.
+
+Si realizas mejoras o correcciones, te agradecería que las compartieras para evaluarlas e incorporarlas a la versión oficial, beneficiando a toda la comunidad.
+
+Autor: Mateo Crespo (Animateo)
